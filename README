@@ -1,0 +1,18 @@
+Intent is to add Auth Digest support to node.js. Test against personal lighttpd server
+
+Dependencies:
+-node 0.1.90 or higher
+-hashlib
+
+Usage Notes:
+-Similar to http.Client. only export is
+
+createClient(port, host, username, password, expectedRealm)
+
+The parameters explain themselves, except that expectedRealm enforces auth realm.
+
+CAVEATS:
+-All HACKs and FIXMEs documented in the source.
+-In normal working circumstances, the first request will either return 401 (authorization error) or 408 (request timed out). 408 is actually the success case, but since this class does not buffer the request I just force the user to retry.
+
+Better ideas welcome.

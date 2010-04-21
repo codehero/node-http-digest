@@ -1,5 +1,4 @@
 var http = require("http");
-var sys = require("sys");
 var hashlib = require("hashlib");
 
 var wwwAuthMap = {
