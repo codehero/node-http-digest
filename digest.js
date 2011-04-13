@@ -1,3 +1,6 @@
+/*
+ * LICENSING: node-http-digest is in the public domain.
+ * */
 var http = require("http");
 var hashlib = require("hashlib");
 

@@ -16,3 +16,6 @@ CAVEATS:
 -In normal working circumstances, the first request will either return 401 (authorization error) or 408 (request timed out). 408 is actually the success case, but since this class does not buffer the request I just force the user to retry.
 
 Better ideas welcome.
+
+LICENSING:
+node-http-digest is in the public domain.
